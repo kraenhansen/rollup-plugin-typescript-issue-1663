@@ -2,8 +2,11 @@
   "extends": "@tsconfig/node18/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "noEmit": true,
+    "allowJs": true,
     "paths": {
-      "rollup-paths-bug/internal": ["./src/internal.ts"],
+      "rollup-paths-bug/internal": ["./generated/internal.mjs"],
     }
-  }
+  },
+  "include": ["src", "generated"]
 }

@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.json",
+  /*
+  "compilerOptions": {
+    "paths": {
+      "rollup-paths-bug/internal": ["./generated/internal.mjs"],
+    }
+  }
+  */
+}

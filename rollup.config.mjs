@@ -23,7 +23,7 @@ import typescript from "@rollup/plugin-typescript";
 
 export default [
   {
-    input: "src/index.ts",
+    input: "src/index.mts",
     output: [
       {
         file: "./dist/bundle.js",
@@ -36,6 +36,7 @@ export default [
         preferBuiltins: true,
       }),
       typescript({
+        tsconfig: "src/tsconfig.json",
         noEmitOnError: true,
         outputToFilesystem: true,
       }),
