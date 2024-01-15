@@ -6,6 +6,6 @@ Steps to reproduce:
 - `npm install`
 - `npm test`
 - `cat dist/bundle.js` and notice how `some-js-file` and `some-json-file` are not included in the bundle.
-- Edit `rollup.config.mjs` by removing the comment from `include: '{,**/}*.(cts|mts|ts|tsx|js|mjs|json)`
+- Edit `rollup.config.mjs` by removing the comment from `include: '{,**/}*.(cts|mts|ts|tsx|cjs|mjs|js|json)`
 - `npm test`
 - `cat dist/bundle.js` and notice how `some-js-file` and `some-json-file` are now resolved as expected and even de-duplicated.

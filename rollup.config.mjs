@@ -41,7 +41,7 @@ export default [
         tsconfig: "tsconfig.json",
         noEmitOnError: true,
         outputToFilesystem: true,
-        // include: '{,**/}*.(cts|mts|ts|tsx|js|mjs|json)'
+        // include: '{,**/}*.(cts|mts|ts|tsx|cjs|mjs|js|json)'
       }),
     ],
     external: [],
