@@ -1,12 +1,14 @@
 {
   "extends": "@tsconfig/node18/tsconfig.json",
   "compilerOptions": {
+    "outDir": "ts-dist",
     "baseUrl": ".",
     "noEmit": true,
     "allowJs": true,
     "paths": {
-      "rollup-paths-bug/internal": ["./generated/internal.mjs"],
+      "rollup-paths-bug/internal": ["./generated/internal-js.mjs"],
     }
   },
-  "include": ["src", "generated"]
+  "include": ["src"],
+  "exclude": ["generated"]
 }

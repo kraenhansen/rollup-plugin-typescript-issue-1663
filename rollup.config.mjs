@@ -36,9 +36,10 @@ export default [
         preferBuiltins: true,
       }),
       typescript({
-        tsconfig: "src/tsconfig.json",
+        tsconfig: "tsconfig.json",
         noEmitOnError: true,
         outputToFilesystem: true,
+        // include: '{,**/}*.(cts|mts|ts|tsx|js|mjs)'
       }),
     ],
     external: [],
