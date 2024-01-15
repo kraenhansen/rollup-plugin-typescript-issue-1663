@@ -2,13 +2,15 @@
   "extends": "@tsconfig/node18/tsconfig.json",
   "compilerOptions": {
     "outDir": "ts-dist",
-    "baseUrl": ".",
     "noEmit": true,
     "allowJs": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
     "paths": {
-      "rollup-paths-bug/internal": ["./generated/internal-js.mjs"],
+      "some-js-file": ["./src/some-js-file.js"],
+      "some-json-file": ["./src/some-json-file.json"],
+      "some-ts-file": ["./src/some-ts-file.ts"],
     }
   },
-  "include": ["src"],
-  "exclude": ["generated"]
+  "include": ["src"]
 }

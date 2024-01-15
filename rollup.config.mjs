@@ -20,6 +20,7 @@
 
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
+import json from "@rollup/plugin-json";
 
 export default [
   {
@@ -35,11 +36,12 @@ export default [
         modulesOnly: true,
         preferBuiltins: true,
       }),
+      json(),
       typescript({
         tsconfig: "tsconfig.json",
         noEmitOnError: true,
         outputToFilesystem: true,
-        // include: '{,**/}*.(cts|mts|ts|tsx|js|mjs)'
+        // include: '{,**/}*.(cts|mts|ts|tsx|js|mjs|json)'
       }),
     ],
     external: [],

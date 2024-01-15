@@ -1,1 +1,0 @@
-export const greeting = "Hello from JS to";
